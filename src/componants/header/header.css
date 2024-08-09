@@ -1,0 +1,159 @@
+/* 
+    ======================
+    #Table Of Codes
+    ======================
+
+    1- Header Sec
+    2- Menu Sec
+    3- Animations
+    4- Responsive Design
+ */
+
+/* Header Sec */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.list {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: var(--second);
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.6);
+}
+
+.list-item {
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.4s;
+  letter-spacing: 1px;
+}
+
+.list-item:hover,
+.list-item:focus {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  color: var(--sub-title) !important;
+  background-color: var(--border) !important;
+  border-radius: 50%;
+  transition: 0.4s ease;
+  border: none;
+  box-shadow: 0px 0px 10px #000000;
+}
+
+.button:hover {
+  color: var(--title) !important;
+  border: 1px solid #ededed;
+  cursor: pointer;
+}
+
+.button:active,
+.list-item:active {
+  scale: 0.8;
+}
+
+/* Menu Sec */
+.fixed {
+  position: fixed;
+  inset: 0;
+  background-color: hsla(0, 3%, 14%, 0.898);
+  animation: scale 0.4s ease;
+  backdrop-filter: blur(4px);
+  z-index: 100;
+}
+
+.fixed ul {
+  background-color: #1f1c1c;
+  margin: 3rem;
+  list-style: none;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 1px 1px 15px #050505d7;
+  padding: 5px 10px;
+  animation: scale 1s ease;
+}
+
+.fixed ul li {
+  padding: 10px;
+}
+
+.fixed ul li a {
+  color: #ededed;
+  transition: 0.4s;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.fixed ul li:first-child {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  padding: 0;
+}
+
+.btn i:hover {
+  color: rgb(206, 9, 9);
+  animation: rotate 5s ease;
+}
+
+.btn {
+  background-color: #1f1c1c;
+  border-radius: 50%;
+  border: none;
+  font-size: 30px;
+  transition: 0.4s;
+}
+.btn i {
+  transition: 0.4s;
+  color: #ededed;
+}
+.fixed ul li a:hover {
+  color: #2dc7b4;
+}
+
+/* Animations */
+@keyframes scale {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+    rotate: (0deg);
+  }
+  50% {
+    rotate: (180deg);
+  }
+  100% {
+    rotate: (360deg);
+  }
+}
+/* Responsive */
+@media (max-width: 810px) {
+  .list {
+    display: none;
+  }
+}
+
+@media (min-width: 811px) {
+  .small {
+    display: none;
+  }
+}
