@@ -104,7 +104,7 @@ module.exports = {
 ---
 
 ## 📸 Preview
-<img src="./screenshot01" />
+<img src="./screenshot01.png" />
 
 ## 🙋‍♂️ Author
 Ahmed Hamdy
